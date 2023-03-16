@@ -145,15 +145,16 @@ button {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 2rem;
+  padding-left: 1rem;
 }
 
-.specials > h4 {
+.specials h4 {
   font-family: 'Markazi Text', 'serif';
   font-weight: 400;
   font-size: 40px;
 }
 
-.cards {
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -191,6 +192,103 @@ button {
 
 #card-price {
   color: #ee9972;
+}
+
+/* TESTIMONIALS */
+.testimonials {
+  background-color: #495e57;
+  padding: 1rem;
+}
+.testimonials > h4 {
+  font-family: 'Markazi Text', 'serif';
+  font-weight: 400;
+  font-size: 40px;
+  color: #edefee;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.testimonials-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.testimonial {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 16px;
+  margin-bottom: 1rem;
+  width: 90%;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.testimonial > section {
+  display: flex;
+  align-items: center;
+}
+.testimonial img {
+  max-width: 160px;
+  max-height: 160px;
+}
+.testimonial-name {
+  font-weight: 600;
+  font-size: 20px;
+  margin-left: 1rem;
+}
+.testimonial > p {
+  margin: 0.5rem;
+}
+
+/* INFO */
+.info {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.info-text {
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+}
+.info-text h2 {
+  line-height: 0;
+  margin-bottom: 2rem;
+}
+.info-images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.info-images > img {
+  max-width: 350px;
+  border-radius: 16px;
+  margin-bottom: 1rem;
+}
+/* FOOTER */
+footer {
+  background-color: #495e57;
+  padding: 1rem 0;
+  display: flex;
+}
+
+footer section {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer img {
+  max-height: 70%;
+}
+
+footer h3 {
+  color: #f4ce14;
+}
+
+footer li,
+footer a {
+  color: #edefee;
 }
 
 a {
@@ -233,8 +331,6 @@ main {
 
 footer {
   grid-column: 1 / -1;
-  display: flex;
-  justify-content: center;
 }
 
 footer ul {
@@ -260,9 +356,25 @@ footer ul {
     width: 390px;
     margin: 0;
   }
-
   .card {
     width: 50%;
+  }
+  .testimonial > section {
+    justify-content: space-between;
+  }
+  .testimonial img {
+    max-width: 50%;
+  }
+  .info-images {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  footer {
+    padding: 1rem 2rem;
+  }
+  footer img {
+    max-height: 80%;
+    align-self: center;
   }
 }
 
@@ -279,7 +391,15 @@ footer ul {
   nav {
     grid-column: 4 / 13;
   }
-  .cards {
+  .hero {
+    padding: 2rem 6rem;
+  }
+  .specials-header {
+    margin-top: 3rem;
+    padding: 0 5rem;
+  }
+  .container {
+    display: flex;
     flex-direction: row;
     align-items: stretch;
     justify-content: space-around;
@@ -299,19 +419,84 @@ footer ul {
     min-height: 315px;
     justify-content: space-between;
   }
+  .testimonials-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .testimonial {
+    max-width: 40%;
+    margin-bottom: 2rem;
+  }
 }
 
 @media (min-width: 1280px) {
   header {
-    grid-column: 4 / 5;
+    grid-column: 1 / 4;
   }
   nav {
-    grid-column: 6 / 10;
+    max-width: 60%;
+    grid-column: 4 / 13;
+  }
+  .hero {
+    padding-left: 19%;
   }
   .image-wrapper > img {
     transform: translateY(15%);
   }
+  .specials {
+    display: flex;
+    flex-direction: column;
+  }
   .specials-header {
-    padding: 0 4rem;
+    padding: 0 calc(19% - 1rem);
+  }
+  .cards {
+    max-width: 75%;
+    align-self: center;
+  }
+  .card {
+    max-width: 20%;
+  }
+  .testimonials-wrapper {
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+  }
+  .testimonial {
+    max-width: 20%;
+    margin-bottom: 2rem;
+  }
+  .info {
+    flex-direction: row;
+  }
+  .info-text {
+    padding: 9rem 0 0 calc(19% - 1rem);
+  }
+  .info-text > p {
+    margin-top: 6rem;
+  }
+  .info-images {
+    margin: 2rem 0 0 9rem;
+    transform: translateY(5%);
+    flex-direction: column;
+  }
+  .info-images > img {
+    width: 275px;
+    height: 340px;
+    object-fit: cover;
+  }
+  .info-images > img:last-child {
+    transform: translateY(-25%) translateX(-25%);
+  }
+  footer {
+    justify-content: center;
+    padding: 2rem 4rem;
+  }
+  footer section {
+    width: 75%;
+  }
+  footer img {
+    max-height: 100%;
   }
 }

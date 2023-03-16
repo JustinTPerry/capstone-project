@@ -1,8 +1,9 @@
-
-export default function Card({ imgsrc, title, price, description }) {
+import React from "react"
+const Card = props => {
+    const { imgSrc, imgAlt, title, price, description } = props;
     return (
         <section className="card">
-            <img src={imgsrc} />
+            <img src={imgSrc} alt={imgAlt} />
             <section className="card-body">
                 <section className="card-text">
                     <section>
@@ -16,3 +17,5 @@ export default function Card({ imgsrc, title, price, description }) {
         </section>
     )
 }
+
+export default Card;
