@@ -1,11 +1,13 @@
-import { Route, Routes } from "react-router-dom"
 import React from "react"
+
 import Card from "./Card"
 import Testimonial from "./Testimonial"
 import Hero from "./Hero"
 import Specials from "./Specials"
 import Testimonials from "./Testimonials"
 import Info from "./Info"
+
+import "../styles/Main.css";
 
 import restaurantFood from "../images/restaurantfood.jpg"
 import greekSalad from "../images/greeksalad.jpg"
@@ -102,14 +104,6 @@ export default function Main() {
                 </section>
             </Info>
 
-            <Routes>
-                <Route path="/"></Route>
-                <Route path="/about"></Route>
-                <Route path="/menu"></Route>
-                <Route path="/reservations"></Route>
-                <Route path="/order-online"></Route>
-                <Route path="/login"></Route>
-            </Routes>
         </main>
     )
 }
