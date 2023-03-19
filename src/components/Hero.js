@@ -9,7 +9,7 @@ const Hero = props => {
                     <h2>{subTitle}</h2>
                 </div>
                 <p>{description}.</p>
-                <button>{buttonText}</button>
+                <button aria-label="On Click">{buttonText}</button>
             </section>
             <section className="image-wrapper">
                 <img src={imgSrc} alt={imgAlt} />

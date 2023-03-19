@@ -1,11 +1,11 @@
 import React from "react";
 import BookingForm from "./BookingForm";
 import "../styles/Booking.css"
-const BookingPage = props => {
-    const { formData, setFormData, timeDispatch, availableTimes, submitForm } = props
+const BookingPage = ({ submitHandler }) => {
+
     return (
         <>
-            <BookingForm formData={formData} setFormData={setFormData} timeDispatch={timeDispatch} availableTimes={availableTimes} submitForm={submitForm}></BookingForm>
+            <BookingForm  submitHandler={submitHandler}></BookingForm>
         </>
     )
 }
