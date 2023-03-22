@@ -4,8 +4,8 @@ import logo from "../images/Tall-Logo.jpeg"
 export default function Footer() {
     return (
         <footer>
+            <img src={logo} alt="Little Lemon Logo" />
             <section>
-                <img src={logo} alt="Little Lemon Logo" />
                 <ul className="footer-nav">
                     <h3>Doormat Navigation</h3>
                     <li><Link to="/">Home</Link></li>

@@ -20,21 +20,23 @@ import person4 from "../images/person4.jpg"
 import marioAndAdrianA from "../images/MarioAndAdrianA.jpg"
 import marioAndAdrianB from "../images/MarioAndAdrianB.jpg"
 
-export default function Main() {
+export default function Main({navigate}) {
     return (
         <main>
             <Hero
                 title="Little Lemon"
-                subtitle="Chicago"
+                subTitle="Chicago"
                 description="We are a family owned Mediterannean restaurant, focused on traditional recipes served with a modern twist."
                 buttonText="Reserve a Table"
                 imgSrc={restaurantFood}
                 imgAlt="Server holding a plate with food on it."
+                navigate={navigate}
             />
 
             <Specials
                 title="Specials"
                 buttonText="Online Menu"
+                navigate={navigate}
             >
                 <Card
                     imgSrc={greekSalad}
@@ -94,7 +96,7 @@ export default function Main() {
 
             <Info
                 title="Little Lemon"
-                subtitle="Chicago"
+                subTitle="Chicago"
                 description="Little Lemon is a charming neighborhood bistro that serves simple food and classic cocktails in a lively, but casual environment.
                 The restaurant features a locally-sourced menu with daily specials. Opened in 2019 by friends, Mario and Adrian."
             >

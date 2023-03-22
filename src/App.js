@@ -27,7 +27,7 @@ function App() {
       <Header />
       <Nav />
       <Routes>
-        <Route path="/" element={<Main />} />
+        <Route path="/" element={<Main navigate={navigate}/>} />
         <Route path="/reservations" element={<BookingPage submitHandler={submitForm}/>} />
         <Route path="/confirmed-booking" element={<ConfirmedBooking />} />
       </Routes>

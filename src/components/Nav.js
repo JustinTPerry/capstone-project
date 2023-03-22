@@ -1,15 +1,22 @@
 import { Link } from "react-router-dom"
-import React from "react"
+import React, {useState} from "react"
+import hamburgerIcon from "../images/hamburger-menu.png"
+const pages = [
+    ["/", "Home"],
+    ["/about", "About"],
+    ["/menu", "Menu"],
+    ["/reservations", "Reservations"],
+    ["/order-online", "Order Online"],
+    ["/login", "Login"],
+]
+
+
+
 export default function Nav() {
     return (
         <nav>
             <ul className="nav-list">
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/about">About</Link></li>
-                <li><Link to="/menu">Menu</Link></li>
-                <li><Link to="/reservations">Reservations</Link></li>
-                <li><Link to="/order-online">Order Online</Link></li>
-                <li><Link to="/login">Login</Link></li>
+                {pages.map(page => <li key={page[1]} className="nav-item"><Link to={page[0]}>{page[1]}</Link></li>)}
             </ul>
         </nav>
     )
