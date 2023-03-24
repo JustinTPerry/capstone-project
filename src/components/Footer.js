@@ -17,7 +17,7 @@ export default function Footer() {
                 </ul>
                 <ul className="footer-contact">
                     <h3>Contact</h3>
-                    <li>1110 E Parker Rd, Plano, TX 7504</li>
+                    <li>1110 E Parker Rd, Chicago, IL 60007</li>
                     <li>(123) 456-7890</li>
                     <li>customer-support@littlelemon.com</li>
                 </ul>

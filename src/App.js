@@ -6,12 +6,15 @@ import { submitAPI } from "./utils/api";
 
 import Header from './components/Header';
 import Nav from './components/Nav';
-import Main from './components/Main';
+import Home from './pages/Home';
+import BookingPage from './pages/BookingPage';
+import Menu from "./pages/Menu";
 import Footer from './components/Footer';
-import BookingPage from './components/BookingPage';
-import ConfirmedBooking from './components/ConfirmedBooking';
+import ConfirmedBooking from './pages/ConfirmedBooking';
+
 
 import './styles/App.css';
+
 
 function App() {
   const navigate = useNavigate();
@@ -27,7 +30,8 @@ function App() {
       <Header />
       <Nav />
       <Routes>
-        <Route path="/" element={<Main navigate={navigate}/>} />
+        <Route path="/" element={<Home navigate={navigate}/>} />
+        <Route path="/menu" element={<Menu />}/>
         <Route path="/reservations" element={<BookingPage submitHandler={submitForm}/>} />
         <Route path="/confirmed-booking" element={<ConfirmedBooking />} />
       </Routes>

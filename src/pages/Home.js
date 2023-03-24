@@ -1,11 +1,11 @@
 import React from "react"
 
-import Card from "./Card"
-import Testimonial from "./Testimonial"
-import Hero from "./Hero"
-import Specials from "./Specials"
-import Testimonials from "./Testimonials"
-import Info from "./Info"
+import Card from "../components/Card"
+import Testimonial from "../components/Testimonial"
+import Hero from "../components/Hero"
+import Specials from "../components/Specials"
+import Testimonials from "../components/Testimonials"
+import Info from "../components/Info"
 
 import "../styles/Main.css";
 
@@ -20,7 +20,7 @@ import person4 from "../images/person4.jpg"
 import marioAndAdrianA from "../images/MarioAndAdrianA.jpg"
 import marioAndAdrianB from "../images/MarioAndAdrianB.jpg"
 
-export default function Main({navigate}) {
+export default function Home({navigate}) {
     return (
         <main>
             <Hero

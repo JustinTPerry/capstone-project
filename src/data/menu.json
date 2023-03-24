@@ -1,0 +1,46 @@
+{
+    "appetizers": [
+        {
+            "title": "Feta spread",
+            "description": "Served with toasted pita and olive oil-marinated cucumbers",
+            "prices": [
+                {
+                    "size": "M",
+                    "cost": "$4.99"
+                },
+                {
+                    "size": "L",
+                    "cost": "$6.99"
+                }
+            ]
+        },
+        {
+            "title": "Sea bass",
+            "description": "Served with tomato and black olive salsa",
+            "prices": [
+                {
+                    "size": "M",
+                    "cost": "$6.99"
+                },
+                {
+                    "size": "L",
+                    "cost": "$8.99"
+                }
+            ]
+        },
+        {
+            "title": "Chicken and rice salad",
+            "description": "Served with pine nuts and lemon",
+            "prices": [
+                {
+                    "size": "M",
+                    "cost": "$5.99"
+                },
+                {
+                    "size": "L",
+                    "cost": "$6.99"
+                }
+            ]
+        }
+    ]
+}

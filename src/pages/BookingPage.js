@@ -1,5 +1,5 @@
 import React from "react";
-import BookingForm from "./BookingForm";
+import BookingForm from "../components/BookingForm";
 import "../styles/Booking.css"
 const BookingPage = ({ submitHandler }) => {
 
