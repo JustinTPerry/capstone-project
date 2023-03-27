@@ -29,8 +29,8 @@
             ]
         },
         {
-            "title": "Chicken and rice salad",
-            "description": "Served with pine nuts and lemon",
+            "title": "Bruchetta",
+            "description": "Grilled bread smeared with garlic and seasoned with salt and olive oil.",
             "prices": [
                 {
                     "size": "M",
@@ -38,7 +38,124 @@
                 },
                 {
                     "size": "L",
+                    "cost": "$8.99"
+                }
+            ]
+        }
+    ],
+    "meals": [
+        {
+            "title": "Cheese soup",
+            "description": "Served with prawns, green onion, and parsley",
+            "prices": [
+                {
+                    "cost": "$8.99"
+                }
+            ]
+        },
+        {
+            "title": "Baked chicken legs",
+            "description": "Served with olive oil pasta",
+            "prices": [
+                {
+                    "cost": "$9.99"
+                }
+            ]
+        },
+        {
+            "title": "Grilled vegetables",
+            "description": "Grilled mix of mushroom, zucchini, onion, tomato, corn, and asparagus",
+            "prices": [
+                {
+                    "cost": "$9.99"
+                }
+            ]
+        }
+    ],
+    "salads": [
+        {
+            "title": "Tabbouli",
+            "description": "Chopped parsley mixed with diced tomato, green onion, cracked wheat, lemon, and olive oil",
+            "prices": [
+                {
+                    "size": "S",
+                    "cost": "$3.99"
+                },
+                {
+                    "size": "L",
                     "cost": "$6.99"
+                }
+            ]
+        },
+        {
+            "title": "Greek salad",
+            "description": "Chopped lettuce, tomato, cucumber, onion, bell pepper, olive, and home made dressing topped with feta cheese",
+            "prices": [
+                {
+                    "size": "S",
+                    "cost": "$4.99"
+                },
+                {
+                    "size": "L",
+                    "cost": "$6.99"
+                }
+            ]
+        },
+        {
+            "title": "Fattouch",
+            "description": "Chopped lettuce mixed with tomato, cucumber, green onion, olive, and lemon topped with toasted pita",
+            "prices": [
+                {
+                    "size": "S",
+                    "cost": "$4.99"
+                },
+                {
+                    "size": "L",
+                    "cost": "$7.99"
+                }
+            ]
+        }
+    ],
+    "desserts": [
+        {
+            "title": "Lemon dessert",
+            "description": "Carefully sourced lemon, as authentic as you can imagine",
+            "prices": [
+                {
+                    "size": "S",
+                    "cost": "$3.99"
+                },
+                {
+                    "size": "M",
+                    "cost": "$5.99"
+                }
+            ]
+        },
+        {
+            "title": "Crema Catalana",
+            "description": "Custard cream, flavored with cinnamon, lemon, and orange zest, topped with a layer of caramelized sugar",
+            "prices": [
+                {
+                    "size": "S",
+                    "cost": "$4.99"
+                },
+                {
+                    "size": "M",
+                    "cost": "$6.99"
+                }
+            ]
+        },
+        {
+            "title": "Tiramisu",
+            "description": "Layers of Coffee-soaked ladyfingers and mascarpone with an egg cream all drizzled with cocoa",
+            "prices": [
+                {
+                    "size": "S",
+                    "cost": "$3.99"
+                },
+                {
+                    "size": "M",
+                    "cost": "$5.99"
                 }
             ]
         }

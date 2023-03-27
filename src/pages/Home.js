@@ -41,7 +41,7 @@ export default function Home({navigate}) {
                 <Card
                     imgSrc={greekSalad}
                     title="Greek salad"
-                    price="$12.99"
+                    price="$6.99"
                     description="The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons. "
                     imgAlt="A greek salad."
                 />
@@ -55,7 +55,7 @@ export default function Home({navigate}) {
                 <Card
                     imgSrc={lemonDessert}
                     title="Lemon Dessert"
-                    price="$5.00"
+                    price="$4.99"
                     description="This comes straight from grandma’s recipe book, every last ingredient has been sourced and is as authentic as can be imagined. "
                     imgAlt="A lemon dessert."
                 />

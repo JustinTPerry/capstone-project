@@ -20,7 +20,7 @@
   padding: 3rem 0;
 }
 
-button {
+main button {
   background-color: #f4ce14;
   padding: 0.75rem 1rem;
   border: none;
@@ -28,6 +28,14 @@ button {
   font-family: 'Markazi Text', serif;
   font-size: 18px;
   width: 150px;
+}
+
+main button:hover {
+  cursor: pointer;
+}
+
+main button:active {
+  background-color: #ffde3a;
 }
 
 .image-wrapper {
@@ -100,6 +108,14 @@ button {
 
 #card-price {
   color: #ee9972;
+}
+
+.delivery-button {
+  color: #333;
+}
+
+.delivery-button:active {
+  color: #707070;
 }
 
 /* TESTIMONIALS */
